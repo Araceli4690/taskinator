@@ -3,7 +3,7 @@
 }
 
 :root {
-  --primary: #00b7cf;
+  --primary: #0091c3;
   --secondary: #f9f5ff;
   --tertiary: rgb(0 0 0);
   --grey: #8c39a2;
@@ -18,13 +18,13 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Inconsolata', monospace;
 }
 
 header {
   background: var(--secondary);
   padding: 30px 25px;
-  border-bottom: 5px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
 }
 
 header p {
@@ -50,7 +50,7 @@ form input {
   padding: 12px;
   width: 100%;
   font-size: 2.2rem;
-  border: 2px solid var(--grey);
+  border: 1px solid var(--grey);
   border-radius: 12px;
 }
 
@@ -63,9 +63,9 @@ footer {
   width: 100%;
   background: var(--secondary);
   color: var(--tertiary);
-  font-size: 2.4rem;
+  font-size: 15px;
   padding: 20px;
-  border-top: 5px solid var(--primary);
+  border-top: 2px solid var(--primary);
 }
 
 .page-title {
@@ -90,24 +90,25 @@ footer {
 }
 
 .list-title {
-  font-size: 20px;
+  font-size: 22px;
   text-align: center;
+  color: black;
 }
 
 .task-list {
   list-style: none;
   padding: 15px;
   height: calc(100% - 50px);
-  background: rgb(196, 196, 196);
+  background: rgb(250 254 255);
   border-radius: 50px;
-  border: 2px solid var(--grey);
+  border: 1px solid var(--grey);
 }
 
 .task-item {
-  color: var(--grey);
+  color: black;
   padding: 15px 15px;
-  border: 2px solid var(--grey);
-  background: var(--tertiary);
+  border: 1px solid var(--grey);
+  background: var(--secondary);
   border-radius: 12px;
   margin-bottom: 20px;
 }
@@ -118,7 +119,7 @@ footer {
 }
 
 .task-type {
-  color: var(--secondary);
+  color: black;
   font-size: 1.55rem;
 }
 .task-actions {
@@ -141,10 +142,10 @@ footer {
   padding: 10px 15px;
   background: var(--primary);
   font-size: 2.2rem;
-  border-radius: 12px;
+  border-radius: 100px;
   position: relative;
   top: -3px;
-  box-shadow: 0 3px var(--grey);
+  box-shadow: 3px 3px 3px var(--grey);
 }
 
 .btn:hover {
@@ -161,8 +162,8 @@ footer {
   font-size: 1.4rem;
   padding: 5px 7px;
   margin: 3px;
-  background: var(--secondary);
-  color: #fff;
+  background: white;
+  color: black;
 }
 
 .select-dropdown,
@@ -174,7 +175,7 @@ footer {
   width: 100%;
   max-width: 100%;
   margin: 0;
-  border: 2px solid var(--grey);
+  border: 1px solid var(--grey);
   border-radius: 12px;
   -moz-appearance: none;
   -webkit-appearance: none;
