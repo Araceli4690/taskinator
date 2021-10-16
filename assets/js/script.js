@@ -112,7 +112,7 @@ let createTaskActions = function (taskId) {
     actionContainerEl.appendChild(statusSelectEl);
 
     // create status options
-    let statusChoices = ["school", "work", "personal"];
+    let statusChoices = ["to do", "in progress", "completed"];
     for (let i = 0; i < statusChoices.length; i++) {
         //creating option element
         var statusOptionEl = document.createElement("option");
@@ -210,11 +210,11 @@ let taskStatusChangeHandler = function (event) {
     //get currently selected options value adn coenvert to lowercase
     let statusValue = event.target.value.toLowerCase();
 
-    if (statusValue === "school") {
+    if (statusValue === "to do") {
         tasksToDoEl.appendChild(taskSelected);
-    } else if (statusValue === "work") {
+    } else if (statusValue === "in progress") {
         taskInProgressEl.appendChild(taskSelected);
-    } else if (statusValue === "personal") {
+    } else if (statusValue === "completed") {
         tasksCompletedEl.appendChild(taskSelected);
     }
 
